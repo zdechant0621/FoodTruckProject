@@ -21,5 +21,5 @@ Constructors
 <br>
 Switches and If Statements
 <br>
-For each Statments
+For each Statements
 
