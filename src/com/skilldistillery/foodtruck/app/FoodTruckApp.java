@@ -26,7 +26,7 @@ public class FoodTruckApp {
 		String userType = "";
 		int userRating = 0;
 
-		System.out.println("Enter 'quit' any time to access next menu");
+		System.out.println("Enter 'quit' to access next menu");
 		for (int counter = 0; counter < fleet.length; counter++) {
 			System.out.print("Please enter the name of a food truck: ");
 			userTruck = sc.nextLine();
@@ -35,7 +35,7 @@ public class FoodTruckApp {
 				break;
 			}
 
-			System.out.print("Please enter the type: ");
+			System.out.print("Please enter the type of food served: ");
 			userType = sc.nextLine();
 
 			System.out.print("Please enter a rating 1-5:");
@@ -75,15 +75,15 @@ public class FoodTruckApp {
 			System.out.println("Goodbye");
 			System.exit(input);
 
-
 		}
-		//sc.close();
+		// sc.close();
 	}
 
 	public void display() {
 		for (FoodTruck foodTruck : fleet) {
 			if (foodTruck != null)
 				System.out.println(foodTruck);
+				System.out.println("");
 		}
 		nextMenu();
 	}
@@ -119,6 +119,7 @@ public class FoodTruckApp {
 
 		}
 		System.out.println(best);
+		System.out.println("");
 		nextMenu();
 	}
 
